@@ -2,12 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto Mono";
 
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
 
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -48,7 +57,6 @@ border: none;
 }
 
 .header-title h1 {
-    font-family: 'Roboto Mono';
     font-size: 2.5rem;
 }
 
@@ -56,6 +64,18 @@ border: none;
     display: flex;
     align-items: center;
     list-style: none;
+}
+
+.header-content-list li {
+    padding: 2px 8px 8px;
+    cursor: pointer;
+    border-bottom: 2px solid #000000;
+    transition: 0.3s;
+}
+
+.header-content-list li:hover {
+    border-color: #949494;
+    color: #00ff00;
 }
 
 .header-content-list li + li {
@@ -87,14 +107,9 @@ border: none;
     font-size: 3.6rem;
 }
 
-.text p{
-    font-family: 'Roboto Mono';
-}
-
 .text span {
     display: block;
     color: #00ff00;
-    font-family: 'Roboto Mono';
     font-size: 1.6rem;
 }
 
@@ -110,16 +125,21 @@ border: none;
     color: #FFFFFF;
     width: 12rem;
     height: 3rem;
-    font-family: 'Roboto Mono';
     font-size: 1rem;
     background: transparent;
     border: 2px solid;
     border-color: #FFFFFF;
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .home-buttons button + button {
     margin-top: 20px;
+}
+
+.home-buttons button:hover {
+    border-color: #949494;
+    color: #00ff00;
 }
 
 .project-page {
@@ -161,7 +181,6 @@ border: none;
     gap: 100px; 
     justify-content: space-evenly; 
     align-content: center; 
-    transition: opacity 1s ease-in-out;
 }
 
 .project-card {
@@ -173,18 +192,43 @@ border: none;
     overflow: hidden;
 }
 
-.project-card img {
+.card-image {
+    height: 40%;
+}
+
+.card-image img {
     width: 100%;
+    height: 100%;
 }
 
 .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    height: 60%;
+    padding: 20px 30px;
+    
 }
 
 .card-content h1 {
     text-align: center;
     margin: 0 0 20px;
+}
+
+.card-button {
+    width: 100%;
+    height: 2rem;
+    margin: 20px 0;
+    bottom: 0px;
+    background-color: #444444;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.card-button:hover {
+    background-color: #2b2b2b;
 }
 
 .prev, .next {
@@ -194,6 +238,7 @@ border: none;
     width: 4rem;
     height: 4rem;
     text-align: center;
+    transition: 0.3s;
 }
 
 .prev img, .next img {
