@@ -15,6 +15,10 @@ a {
     color: #FFFFFF;
 }
 
+li {
+    list-style: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -63,7 +67,6 @@ border: none;
 .header-content-list {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
 .header-content-list li {
@@ -145,7 +148,7 @@ border: none;
 .project-page {
     display: flex;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 84vh;
     justify-content: center;
     background: #FFF3F3;
 }
@@ -159,7 +162,7 @@ border: none;
     height: 6rem;
     align-items: center;
     text-align: center;
-    margin: 3rem 0 1rem;
+    margin: 2rem 0 1rem;
 }
 
 .header-projects-page p {
@@ -253,4 +256,116 @@ border: none;
 
 .inactive-project-page {
     display: none;
+}
+
+.about-page {
+    width: 100%;
+    height: 70vh;
+    background: #FFFFFF;
+}
+
+.header-about {
+    text-align: center;
+    margin: 50px 0px 100px;
+}
+
+.header-about h2 {
+    color: #00ff00;
+}
+
+.header-about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content-about {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.text-about {
+    display: flex;
+    width: 100%;
+}
+
+.text-about div {
+    width: 50%;
+} 
+
+.text-about h2 {
+    margin: 20px 0;
+}
+
+.text-about p + p {
+    margin-top: 1rem;
+}
+
+.text-about ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #e1e1e1;
+    border-radius: 5px;
+}
+
+.footer {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/black-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-contact {
+    text-align: center;
+    padding: 100px 0px 100px;
+    color: #FFFFFF;
+}
+
+.header-contact h2 {
+    color: #00ff00;
+}
+
+.header-contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content-contact {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.form {
+    max-width: 50%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: #969696;
+    margin-bottom: 2px;
+}
+
+.form input {
+    margin-bottom: 1rem;
+    padding: 5px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.form textarea {
+    padding: 5px;
+
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
 }
