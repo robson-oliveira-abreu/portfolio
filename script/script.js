@@ -1,5 +1,13 @@
-let prev = document.getElementById("prev")
-let next = document.getElementById("next")
+const scrollLinks = document.querySelectorAll(".scroll-to")
+const prev = document.getElementById("prev")
+const next = document.getElementById("next")
+
+scrollLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+        const el = document.getElementById(item.getAttribute("data-link"))
+        el.scrollIntoView({behavior: "smooth", block: "nearest"})
+    })
+})
 
 prev.addEventListener("click", () => {
 
@@ -8,6 +16,6 @@ prev.addEventListener("click", () => {
 
 next.addEventListener("click", () => {
 
-    window.document.getElementById("scroll").scrollBy(450,0)
+    window.document.getElementById("scroll").scrollBy(465,0)
 })
 

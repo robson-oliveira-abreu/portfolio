@@ -24,16 +24,40 @@
             </div>
 
             <ul class="header-content-list">
-                <li>Home</li>
-                <li>Projetos</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+                <li data-link="home" class="scroll-to">
+                    Home
+                </li>
+                <li data-link="projects" class="scroll-to">
+                    Projetos
+                </li>
+                <li data-link="about" class="scroll-to">
+                    Sobre
+                </li>
+                <li data-link="contact" class="scroll-to">
+                    Contato
+                </li>
             </ul>
         </div>
     </header>
+    <div class="mobileNavBar">
+        <ul class="header-content-list">
+            <li data-link="home" class="scroll-to">
+                Home
+            </li>
+            <li data-link="projects" class="scroll-to">
+                Projetos
+            </li>
+            <li data-link="about" class="scroll-to">
+                Sobre
+            </li>
+            <li data-link="contact" class="scroll-to">
+                Contato
+            </li>
+        </ul>
+    </div>
     <main>
 
-        <div class="home-page">
+        <div id="home" class="home-page">
             <div class="home-content">
                 <div class="text">
                     <p>
@@ -43,13 +67,17 @@
                     </p>
                 </div>
                 <div class="home-buttons">
-                    <button>Projetos</button>
-                    <button>Sobre Mim</button>
+                    <button data-link="projects" class="scroll-to">
+                        Projetos
+                    </button>
+                    <button data-link="about" class="scroll-to">
+                        Sobre Mim
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="project-page">
+        <div id="projects" class="project-page">
             <div class="project-page-content">
                 <div class="header-projects-page">
                     <h1>Projetos</h1>
@@ -63,7 +91,7 @@
                     </a>
 
                     <div id="scroll" class="projects-content">
-                        
+
                         <div class="project-card">
                             <div class="card-image">
                                 <img src="./assets/portfolio.png" alt="">
@@ -154,7 +182,7 @@
             </div>
         </div>
 
-        <div class="about-page">
+        <div id="about" class="about-page">
             <div class="content-about">
                 <div class="header-about">
                     <h2>SOBRE</h2>
@@ -197,7 +225,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="content-contact">
             <div class="header-contact">
                 <h2>CONTATO</h2>

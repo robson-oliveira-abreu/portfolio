@@ -265,7 +265,7 @@ border: none;
 
 .about-page {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 30px;
     background: #FFFFFF;
 }
 
@@ -319,6 +319,7 @@ border: none;
     background-image: url('../assets/black-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
 }
 
 .content-contact {
@@ -369,6 +370,10 @@ border: none;
     background: transparent !important;
     border: none;
     border-bottom: 1px solid #FFFFFF;
+}
+
+.form input:invalid {
+    border-bottom: 1px solid #FF0000;
 }
 
 .form textarea {
@@ -464,7 +469,7 @@ select:-webkit-autofill {
 
     .footer {
         width: 100vw;
-        height: auto;
+        min-height: fit-content;
     }
 
     .formAndContactsDiv {
