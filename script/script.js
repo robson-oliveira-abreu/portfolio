@@ -16,6 +16,6 @@ prev.addEventListener("click", () => {
 
 next.addEventListener("click", () => {
 
-    window.document.getElementById("scroll").scrollBy(465,0)
+    window.document.getElementById("scroll").scrollBy(420,0)
 })
 
