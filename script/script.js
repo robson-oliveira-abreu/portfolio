@@ -11,11 +11,9 @@ menuButton.addEventListener('click', () => {
 
     if (menuClassList == "on") {
         mobileNavBar.classList.add("activeMenu")
-        body.classList.add("hiddenScrollBody") 
 
     } else {
         mobileNavBar.classList.remove("activeMenu")
-        body.classList.remove("hiddenScrollBody")
     }
 
 })
@@ -25,7 +23,6 @@ scrollLinks.forEach((item) => {
 
         mobileNavBar.classList.remove("activeMenu")
         menuButton.classList.remove("on")
-        body.classList.remove("hiddenScrollBody")
 
         const el = document.getElementById(item.getAttribute("data-link"))
         el.scrollIntoView({ behavior: "smooth", block: "nearest" })
