@@ -10,6 +10,10 @@
 
 }
 
+.hiddenScrollBody {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -50,6 +54,7 @@ border: none;
     align-items: center;
     background: #000000;
     color: #FFFFFF;
+    z-index: 99;
 }
 
 .header-content {
@@ -84,6 +89,29 @@ border: none;
 
 .header-content-list li + li {
     margin-left: 20px;
+}
+
+.mobileNavBar {
+    display: none;
+}
+
+.activeMenu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00ff00;
+    z-index: 0;
+}
+
+.contentMobileNavBar li {
+    font-size: 3rem;
+}
+
+.contentMobileNavBar li + li {
+    margin-top: 30px;
 }
 
 .home-page {
@@ -415,7 +443,7 @@ border: none;
         width: 100vw;
         padding: 20px;
         height: auto;
-        flex-direction: column;
+        flex-wrap: wrap;
         overflow-x: hidden;
     }
 
@@ -455,8 +483,32 @@ border: none;
         
     }
 
-    .mobileNavBar {
-        position: absolute;
+    .header-content-list {
+        display: none;
+    }
+    
+    .one, .two, .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 2px;
+        transition: ease 0.5s ;
+    }
+    
+    .section-menu {
+        width: 40px;
+        height: 30px;
+    }
+    
+    .section-menu.on .one{
+        transform: rotate(45deg) translate(8px, 7px);
+    }
+    .section-menu.on .two{
+        opacity: 0;
+    }
+    .section-menu.on .three{
+        transform: rotate(-45deg) translate(9px, -7.5px);
     }
 
     .socialButtons ul li + li {
