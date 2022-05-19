@@ -169,7 +169,6 @@ border: none;
 .project-page {
     display: flex;
     width: 100%;
-    height: 84vh;
     justify-content: center;
     background: #FFF3F3;
 }
@@ -182,7 +181,7 @@ border: none;
 }
 
 .header-projects-page {
-    height: 20%;
+    height: 8.5rem;
     align-items: center;
     text-align: center;
     padding: 2rem 0;
