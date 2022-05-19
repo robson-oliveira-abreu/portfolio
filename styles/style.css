@@ -529,6 +529,7 @@ border: none;
         width: 20rem;
         min-width: 20rem;
         height: 30rem;
+        margin: 10 auto;
     }
 
     .card-content {
