@@ -397,6 +397,15 @@ border: none;
     margin-left: 30px;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links p {
+    margin-left: 6px;
+}
+
 @media (max-width: 820px) {
 
     html {
@@ -441,7 +450,7 @@ border: none;
     }
 
     .project-card {
-        margin: 0 auto;
+        margin: 20 auto;
     }
 
     .text-about {
@@ -524,5 +533,9 @@ border: none;
 
     .card-content {
         padding: 20px 15px;
+    }
+
+    .links p{
+        display: none;
     }
 }
