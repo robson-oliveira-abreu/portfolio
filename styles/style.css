@@ -479,9 +479,13 @@ border: none;
 }
 
 @media (max-width: 600px) {
+    .home-page{
+        height: auto;
+        min-height: -webkit-fill-available;
+    }
+
     .header-content-list {
         margin: 0 auto;
-        
     }
 
     .header-content-list {
